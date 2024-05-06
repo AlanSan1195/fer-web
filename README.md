@@ -3,6 +3,7 @@
 ```sh
 npm create astro@latest -- --template basics
 ```
+<img width="1920" alt="Captura de pantalla 2024-05-06 a la(s) 4 01 11 p m" src="https://github.com/AlanSan1195/fer-web/assets/130740412/99d01b62-9d8d-4c4a-ac0b-9e7ad93adb28">
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
