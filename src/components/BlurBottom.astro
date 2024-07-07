@@ -1,10 +1,11 @@
 ---
-
+import Botones from "./Botones.astro"
 ---
 
 <!-- contiene la clase `mask-blur-bottom` que aplica un efecto de desenfoque en la parte inferior de la pantalla. -->
 
-<div class="fixed inset-x-0 bottom-0 h-[300px] isolate z-10">
+<div class="fixed inset-x-0 bottom-0 h-[200px]  z-10 pt-4">
+  <Botones />
   <div class="mask-blur-bottom absolute inset-0 backdrop-blur-[1px]"></div>
   <div class="mask-blur-bottom absolute inset-0 backdrop-blur-[2px]"></div>
   <div class="mask-blur-bottom absolute inset-0 backdrop-blur-[3px]"></div>
