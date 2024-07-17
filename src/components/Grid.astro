@@ -4,30 +4,56 @@ const { id, titulo } = Astro.props;
 ---
 
 <div
-  class=" grid  grid-cols-6 mx-auto mb-44 gap-4 text-left grid-rows-3 md:grid-rows-3 lg:grid-rows-2 px-4 md:px-8 lg:px-12 max-w-7xl   "
+  class="grid grid-cols-6 mx-auto mb-44 gap-4 text-left grid-rows-3 md:grid-rows-3 lg:grid-rows-2 px-4 md:px-8 lg:px-12 max-w-7xl mt-24"
 >
-  <div class="box-gen text-xl p-4 border-2 col-span-6 md:col-span-3  h-80 shadow">primer cuadro</div>
-  <div class="box-gen text-xl p-4 border-2 col-span-6 md:col-span-3 h-80 hidden md:block">segu cuadro</div>
-  <div class="box-gen text-xl p-4 border-2 col-span-6 md:col-span-3 lg:col-span-2 h-80 hidden md:block">tercero cuadro</div>
-  <div class="box-gen  text-xl col-span-6 md:col-span-3 lg:col-span-2 grid grid-rows-3 ">
+  <div class="box-gen text-xl p-4  border col-span-6 md:col-span-3 h-80 ">
     <div
-      class="box-gen border p-2 m-1  "
+      class="bg-black/40 w-max px-4 py-1 rounded-full border border-gray-400/20 "
     >
-      sub cuadro 1
+      <p>Último Post</p>
     </div>
-    <div class="box-gen border p-2 m-1 row-span-3 shadow  ">sub cuadro 2</div>
+    <div class=" w-max h-max  border-l-2 my-2 px-2 "> <p class="informative">15 de septiembre</p></div>
+    <h1 class=" font-bold text-base">Aprendiendo a usar Grid y a usar estilos con Tailwind</h1>
   </div>
-  <div class="box-gen rounde text-xl p-4 border-2 col-span-5 md:col-span-3 h-80 lg:col-span-2">
+  <div
+    class="box-gen text-xl p-4 border col-span-6 md:col-span-3 h-80 hidden md:block"
+  >
+    segu cuadro
+  </div>
+  <div
+    class="box-gen text-xl p-4 border col-span-6 md:col-span-3 lg:col-span-2 h-80 hidden md:block"
+  >
+    tercero cuadro
+  </div>
+  <div
+    class="box-gen text-xl col-span-6 md:col-span-3 lg:col-span-2 grid grid-rows-3 border border-gray-400/50"
+  >
+    <div class="box-gen border p-2 m-1">sub cuadro 1</div>
+    <div class="box-gen border p-2 m-1 row-span-3 shadow">sub cuadro 2</div>
+  </div>
+  <div
+    class="box-gen rounde text-xl p-4 border-2 col-span-5 md:col-span-3 h-80 lg:col-span-2"
+  >
     quinto cuadro
   </div>
-
 </div>
 
 <style>
+  p {
+    font-size: 16px;
+    opacity: 0.8;
+  }
+  .informative  {
+    font-size: 14px;
+    opacity: 0.5;
+  }
+
+  /* :is(.dark *) agregar esto al boxgen cuando hagamso el modo obscuro  */
   .box-gen {
     border-color: hsla(0, 0%, 100%, 0.1);
     background-color: rgba(24, 24, 27, 0.2);
     outline-color: #1a1a1a;
-    border-radius: 8px;
+    border-radius: 20px;
+    padding: 20px 20px;
   }
 </style>

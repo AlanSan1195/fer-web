@@ -1,28 +1,36 @@
 ---
-import BlurTop from "./BlurTop.astro";
-import BlurBottom from "./BlurBottom.astro";
-import Tarjeta from "./Tarjeta.astro";
+
 
 ---
 
-<section class="relative mb-16 sm:mb-32 bg-light-sun">
-  <article class="mt-12 font-bold text-2xl">
-    doloribus asperiores ab adipisci aspernatur accusamus, facilis 
+<section class="relative mb-16 sm:mb-32 bg-light-sun mt-16">
+  <div class=" flex justify-start backdrop-blur-md text-wrap px-6 lg:px-40 lg:pt-16  ">
+    <div class=" flex flex-col gap-y-1">
+      <img class=" size-14 lg:size-16 rounded-full object-cover" src="/public/imagenes/avatar.webp" alt="imagen de perfil">
+      <h1 class=" font-bold text-2xl">Alan San</h1>
+      <p >Soy un desarrollador web y frontend soy de Gdl mexico</p>
+      <p>Trabajo actualemte en un restaurante argentino llamado La Matera</p>
+      <div id="avalible" class="flex flex-row w-[240px]  items-center gap-x-1 border-[1px] border-gray-500/50 rounded-lg p-1 my-1">
+        <div class=" h-2 w-2 bg-lime-300 rounded-full "></div>
+        <p class=" font-medium">Disponible para nuevos proyectos</p>
 
-    <span class=" text-teal-400">adipisicing elit. Repudiandae, </span>consectetur delectus in perspiciatis
-    doloribus asperiores ab adipisci aspernatur accusamus, facilis numquam animi
+      </div>
+      <div class="flex flex-row w-[340px] mt-3 border rounded-full border-gray-600 justify-center ">
+        <div class=" mx-auto"> Aqui mis accesos directos</div>
+      </div>
 
-    <div class="flex justify-center">
-      <img class="size-72" src="/favicon.svg" alt="" />
     </div>
-    <Tarjeta />
-
-
-    <h1 class=" text-teal-400 text-base">
-      ESTO ES APENAS UNA PRUEBA de diseño para el proximo cliente o proyecto del
-      clon de un portafolio de creador de contenido y saber si FUNCIONA EN
-      SAFARI Y EN CHROME EL EFECTO bg-lights-sun
-    </h1>
+  </div>
 
     
 </section>
+<style>
+  p{
+   font-size: 16px;
+   opacity: .8;
+  }
+  #avalible p{
+   font-size: 13px;
+   opacity: .8;
+  }
+</style>
